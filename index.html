@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>Лепко — студия керамики</title>
+
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <!-- Стили сайта -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Шапка -->
+  <header class="scroll-animated">
+    <a href="#" class="logo">
+      <span class="logo-placeholder"></span> Лепко
+    </a>
+    <nav>
+      <ul>
+        <li><a href="#about">О мастерской</a></li>
+        <li><a href="#contacts">Контакты</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Главный слайдер -->
+  <div class="hero-slider swiper swiper-main scroll-animated">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide hero-slide" style="background-image: url('images/main1.jpg');">
+        <div class="hero-text">
+          <h2>Керамика ручной работы</h2>
+          <p>Каждое изделие — уникально, как отпечаток пальца.</p>
+        </div>
+      </div>
+      <div class="swiper-slide hero-slide" style="background-image: url('images/main2.jpg');">
+        <div class="hero-text">
+          <h2>Мастер-классы для всех</h2>
+          <p>Приходите одни или всей семьёй — мы научим вас творить!</p>
+        </div>
+      </div>
+      <div class="swiper-slide hero-slide" style="background-image: url('images/main3.jpg');">
+        <div class="hero-text">
+          <h2>Дарите тепло глины</h2>
+          <p>Идеальный подарок — сделанный с душой и руками.</p>
+        </div>
+      </div>
+    </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-pagination"></div>
+  </div>
+
+  <!-- Три колонки со слайдерами -->
+  <div class="features">
+    <div class="feature-item scroll-animated">
+      <div class="swiper swiper-mini">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><div class="mini-slider" style="background-image: url('images/col1-1.jpg');"></div></div>
+          <div class="swiper-slide"><div class="mini-slider" style="background-image: url('images/col1-2.jpg');"></div></div>
+          <div class="swiper-slide"><div class="mini-slider" style="background-image: url('images/col1-3.jpg');"></div></div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+      <div class="feature-content">
+        <h3>Мастер-классы</h3>
+        <p>Обучение гончарному делу с нуля. Подходит даже детям!</p>
+      </div>
+    </div>
+
+    <div class="feature-item scroll-animated">
+      <div class="swiper swiper-mini">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><div class="mini-slider" style="background-image: url('images/col2-1.jpg');"></div></div>
+          <div class="swiper-slide"><div class="mini-slider" style="background-image: url('images/col2-2.jpg');"></div></div>
+          <div class="swiper-slide"><div class="mini-slider" style="background-image: url('images/col2-3.jpg');"></div></div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+      <div class="feature-content">
+        <h3>Индивидуальные заказы</h3>
+        <p>Создадим кружку, вазу или скульптуру по вашему эскизу.</p>
+      </div>
+    </div>
+
+    <div class="feature-item scroll-animated">
+      <div class="swiper swiper-mini">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><div class="mini-slider" style="background-image: url('images/col3-1.jpg');"></div></div>
+          <div class="swiper-slide"><div class="mini-slider" style="background-image: url('images/col3-2.jpg');"></div></div>
+          <div class="swiper-slide"><div class="mini-slider" style="background-image: url('images/col3-3.jpg');"></div></div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+      <div class="feature-content">
+        <h3>Галерея работ</h3>
+        <p>Более 200 работ — от минимализма до авторской скульптуры.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Форма заявки -->
+  <section id="contacts" class="contact-section scroll-animated">
+    <h2>Оставить заявку</h2>
+    <form id="orderForm">
+      <div class="form-group">
+        <label for="name">Ваше имя</label>
+        <input type="text" id="name" name="name" required placeholder="Например, Анна">
+      </div>
+      <div class="form-group">
+        <label for="phone">Телефон</label>
+        <input type="tel" id="phone" name="phone" required placeholder="+7 (999) 123-45-67">
+      </div>
+      <div class="form-group">
+        <label for="message">Сообщение (опционально)</label>
+        <textarea id="message" name="message" placeholder="Хочу записаться на мастер-класс..."></textarea>
+      </div>
+      <button type="submit" class="submit-btn">Отправить заявку</button>
+    </form>
+    <a href="https://t.me/Fun_Oleg" class="telegram-link" target="_blank">
+      Или напишите нам напрямую в Telegram
+    </a>
+  </section>
+
+  <!-- Кнопка "Позвонить" -->
+  <div class="footer-cta scroll-animated">
+    <a href="tel:+79149425115" class="btn-call">📞 Позвонить</a>
+  </div>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    // Анимация при прокрутке
+    function animateOnScroll() {
+      const animatedElements = document.querySelectorAll('.scroll-animated');
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('appear');
+          }
+        });
+      }, { threshold: 0.15 });
+      animatedElements.forEach(el => observer.observe(el));
+    }
+
+    // Обработка формы
+    document.getElementById('orderForm')?.addEventListener('submit', function(e) {
+      e.preventDefault();
+      const name = document.getElementById('name').value.trim();
+      const phone = document.getElementById('phone').value.trim();
+      const message = document.getElementById('message').value.trim();
+
+      let text = `Заявка с сайта Лепко:\n\nИмя: ${name}\nТелефон: ${phone}`;
+      if (message) text += `\nСообщение: ${message}`;
+
+      const encodedText = encodeURIComponent(text);
+      const telegramLink = `https://t.me/Fun_Oleg?text=${encodedText}`;
+      window.open(telegramLink, '_blank');
+    });
+
+    // Инициализация
+    document.addEventListener('DOMContentLoaded', () => {
+      new Swiper('.swiper-main', {
+        loop: true,
+        autoplay: { delay: 5000, disableOnInteraction: false },
+        pagination: { el: '.swiper-pagination', clickable: true },
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+      });
+
+      document.querySelectorAll('.swiper-mini').forEach(el => {
+        new Swiper(el, {
+          loop: true,
+          autoplay: { delay: 3000, disableOnInteraction: false },
+          pagination: { el: el.querySelector('.swiper-pagination'), clickable: true },
+          effect: 'fade',
+        });
+      });
+
+      animateOnScroll();
+    });
+  </script>
+</body>
+</html>
